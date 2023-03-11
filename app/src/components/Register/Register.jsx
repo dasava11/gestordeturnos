@@ -9,9 +9,9 @@ border: 1px solid black;
 const Register = ()=>{
     return(
         <ContainerR>
-            <form action="">
-
-            </form>
+            <form>
+                <h1>Formulario Registro</h1>
+            </form>   
         </ContainerR>
     )
 }
