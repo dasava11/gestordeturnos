@@ -1,4 +1,5 @@
 import React, { Component, useState } from "react";
+/* import {HashRouter, Router} from 'react-router-dom'; */
 import styled from 'styled-components';
 
 const Door = styled.div`
