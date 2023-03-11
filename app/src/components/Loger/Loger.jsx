@@ -35,8 +35,14 @@ background-color: #aaaaef;
 margin-left: 4rem;
 margin-right: 4rem;
 margin-top: 2rem;
-margin-bottom: 2.5rem;
+
 cursor: pointer;
+`
+const R = styled.a`
+font-family: Arial, Helvetica, sans-serif;
+font-size: 0.8rem;
+margin-bottom: 2.5rem;
+
 `
 
 const Loger = ()=> {
@@ -63,6 +69,7 @@ alert('Registrado')
             <Data name="email" type="email" placeholder="Enter email" onChange={(e)=>handleChange(e)}/>
             <Data name="password" type="password" placeholder="Enter password" onChange={(e)=>handleChange(e)}/>
             <Click type="submit">Login</Click>
+            <R href="">Registrar</R>
         </Login>
         </Door>
     )
