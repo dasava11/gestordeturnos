@@ -1,13 +1,16 @@
 import "./App.css";
-import { Card } from "./components/Card/Card";
+import { Routes, Route } from "react-router-dom";
 import Loger from "./components/Loger/Loger";
-import Sleeve from "./components/Sleeve/Sleeve";
+import Register from "./components/Register/Register";
 
 function App() {
   return (
     <div className="App">
-      <Sleeve />
       <Loger />
+      <Routes>
+        {/* <Route path="/login" element={<Loger />} /> */}
+        <Route path="/sign-up" element={<Register />} />
+      </Routes>
     </div>
   );
 }
