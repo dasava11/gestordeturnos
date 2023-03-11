@@ -1,13 +1,13 @@
 import "./App.css";
 import { Card } from "./components/Card/Card";
-import Loguer from "./components/Loguer/Loguer";
-
+import Loger from "./components/Loger/Loger";
+import Sleeve from "./components/Sleeve/Sleeve";
 
 function App() {
   return (
     <div className="App">
-      {/* <Card nombre="alan" apellido="pepe" /> */}
-      <Loguer/>
+      <Sleeve />
+      <Loger />
     </div>
   );
 }
