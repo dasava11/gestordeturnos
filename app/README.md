@@ -7,7 +7,7 @@
 **Despues pueden empezar a trabajar en el repo viendolo en tiempo real en un explorador ejecutando el comando "npm start"**
 
 
-* Login component -> componente login
+* Login component -> componente login (HECHO)
         -> un formulario con
             -> un input para el nombre
             -> un input para la contraseña
