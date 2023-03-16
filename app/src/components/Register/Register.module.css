@@ -1,0 +1,12 @@
+.dflex{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 3rem;
+}
+
+.dflex label{
+    display: flex;
+}
