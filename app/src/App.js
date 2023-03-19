@@ -20,7 +20,7 @@ export default function App() {
   // Saqué la fecha porque es complicado usarlo.
   const ejPacientes = [{
     paciente: "alan",
-    dni: 32670268,
+    dni: 87654321,
     email: 'asdasd@asdasd.com',
     doctor: "pepe",
     lugarDeTurno: "asdasda",
@@ -33,6 +33,7 @@ export default function App() {
     lugarDeTurno: 'disney',
   }];
 
+  // Revisar esta función.
   const buscarPaciente = dni => {
     setPacientes(
       ...pacientes,
