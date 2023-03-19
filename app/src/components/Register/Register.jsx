@@ -63,45 +63,48 @@ const Register = ()=>{
 
     console.log(inputs)
 
-    return(
-        <ContainerR  >
-            <h1>Registrate</h1>
-            <form className={style.dflex} >
-                <label>Nombre:</label>
-                <input 
-                    type="text"
-                    placeholder="Escribe tu nombre..."
-                    name="name"
-                    onChange={(e) => handleOnChange(e)}
-                    value={inputs.name}
-                />
-                <label>Apellido:</label>
-                <input 
-                    type="text"
-                    placeholder="Escribe tu apellido..." 
-                    name="lastName"
-                    onChange={(e) => handleOnChange(e)}
-                    value={inputs.lastName}
-                />
-                <label>Email:</label>
-                <input 
-                    type="email"
-                    placeholder="Escribe tu email..."  
-                    name="email"
-                    onChange={(e) => handleOnChange(e)}
-                    value={inputs.email}
-                />
-                <label>Password</label>
-                <input 
-                    type="password"
-                    placeholder="Escribe tu password..."  
-                    name="email"
-                    onChange={(e) => handleOnChange(e)}
-                    value={inputs.password}
-                />
-            </form>   
-        </ContainerR>
-    )
+    return (
+      <ContainerR>
+        <h1>Registrate</h1>
+        <form className={style.dflex}>
+          <label>Nombre:</label>
+          <input
+            type="text"
+            placeholder="Escribe tu nombre..."
+            name="name"
+            onChange={(e) => handleOnChange(e)}
+            value={inputs.name}
+          />
+          <label>Apellido:</label>
+          <input
+            type="text"
+            placeholder="Escribe tu apellido..."
+            name="lastName"
+            onChange={(e) => handleOnChange(e)}
+            value={inputs.lastName}
+          />
+          <label>Email:</label>
+          <input
+            type="email"
+            placeholder="Escribe tu email..."
+            name="email"
+            onChange={(e) => handleOnChange(e)}
+            value={inputs.email}
+          />
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="Escribe tu password..."
+            name="email"
+            onChange={(e) => handleOnChange(e)}
+            value={inputs.password}
+          />
+          <button className={style.button} type="submit">
+            Ingresar
+          </button>
+        </form>
+      </ContainerR>
+    );
 }
 
 export default Register
