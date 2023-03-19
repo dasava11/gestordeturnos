@@ -1,0 +1,31 @@
+.container {
+    background: transparent;
+    border: 2px solid #344259;
+    transition: .5s;
+    transform: translateY(10px);
+    height: 70vh;
+    width: 330px;
+    margin-top: 30px;
+    margin-left: 5px;
+    border-radius: 12px;
+    padding-bottom: 5px;
+    backdrop-filter: blur(15px);
+}
+
+.button {
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 25px;
+    margin-right: 2%;
+    border-radius: 7px;
+    align-self: flex-start;
+    margin: 6px;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: red;
+}
