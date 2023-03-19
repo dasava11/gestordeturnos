@@ -40,6 +40,7 @@ export default function Loger ({ login }) {
                     id='email'
                     name="email"
                     type="email"
+                    autoComplete='off'
                     value={userData.email}
                     placeholder="Ingresa tu email"
                     onChange={handleInputChange}
@@ -54,6 +55,7 @@ export default function Loger ({ login }) {
                       id='password'
                       name="password"
                       type="password"
+                      autoComplete='off'
                       value={userData.password}
                       placeholder="Ingresa tu contraseña"
                       onChange={handleInputChange}
