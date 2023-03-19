@@ -2,7 +2,7 @@ import React, { /*Component,*/ useState } from "react";
 import { Link } from 'react-router-dom';
 import Styles from './Loger.module.css';
 
-export default function Loger () {
+export default function Loger ({ login }) {
   const [userData, setUserData] = useState({
     email: '',
     password: '',
@@ -16,7 +16,7 @@ export default function Loger () {
   };
 
   const handleSubmit = () => {
-    alert('Registrado');
+    login(userData);
   };
 
     return(
