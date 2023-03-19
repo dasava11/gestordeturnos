@@ -6,6 +6,7 @@
     position: fixed;
     backdrop-filter: blur(15px);
     background: transparent;
+    border-bottom: 1px solid white;
 }
 
 h1 {
