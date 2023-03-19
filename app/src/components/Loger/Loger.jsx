@@ -20,15 +20,15 @@ export default function Loger () {
   };
 
     return(
-        <section>
-          {/*
+        <div className={Styles.container}>
+          
           <div className={Styles.frontPage}>
             <img
               className={Styles.logo}
               src="https://sacudete.icbf.gov.co//themes/sacudetethemev2/assets/img/agendate.png"
               alt="img" />
           </div>
-           */}
+          
           <div className={Styles.formBox}>
             <form onSubmit={handleSubmit}>
               <div className={Styles.formGroup}>
@@ -70,6 +70,6 @@ export default function Loger () {
               </div>
             </form>
           </div>
-        </section>
+        </div>
     );
 }
