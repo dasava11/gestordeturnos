@@ -1,8 +1,9 @@
 import Card from '../Card/Card';
+import Styles from './Cards.module.css';
 
 export default function Cards({ onClose, pacientes }) {
   return (
-    <div>
+    <div className={Styles.container}>
     {pacientes.map(paciente => (
       <Card
         key={paciente.dni}
