@@ -1,4 +1,4 @@
-import React, { /*Component,*/ useState } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Styles from './Loger.module.css';
 
@@ -68,7 +68,7 @@ export default function Loger ({ login }) {
                 Ingresar
               </button>
               <div className={Styles.register}>
-                <p>No tenes cuenta <Link to='/sign-up'>Registrate</Link></p>
+                <p>¿No tenés cuenta? <Link to='/sign-up'>Registrate</Link></p>
               </div>
             </form>
           </div>
