@@ -4,6 +4,7 @@ import Loger from "./components/Loger/Loger";
 import Cards from './components/Cards/Cards';
 import Register from "./components/Register/Register";
 import NavBar from './components/NavBar/NavBar';
+import ejPacientes from './data';
 import "./App.css";
 
 export default function App() {
@@ -15,31 +16,13 @@ export default function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Supon que haces una llamada al back-end y
-  // que te devuelve .json con esto.
-  // Saqué la fecha porque es complicado usarlo.
-  const ejPacientes = [{
-    paciente: "alan",
-    dni: 87654321,
-    email: 'asdasd@asdasd.com',
-    doctor: "pepe",
-    lugarDeTurno: "asdasda",
-  },
-  {
-    paciente: 'nahuel',
-    dni: 12345678,
-    email: 'nahuel@gmail.com',
-    doctor: 'fulano el más capo',
-    lugarDeTurno: 'disney',
-  }];
-
   // Revisar esta función.
   const buscarPaciente = dni => {
     setPacientes(
       ...pacientes,
       ejPacientes.map(paciente => paciente.dni === dni),
     );
-  }
+  };
 
   const login = userData => {
     if (userData.email === email &&
@@ -47,27 +30,28 @@ export default function App() {
       setAccess(true);
       navigate('/home');
     } else alert('Acceso denegado');
-  }
+  };
 
   const logout = () => {
     setAccess(false);
     navigate('/');
-  }
+  };
 
   const onClose = dni => {
     setPacientes(pacientes.filter(paciente => paciente.dni !== dni));
-  }
+  };
 
   // Prohibe el acceso al usuario sino provee
   // un email y una contraseña.
   useEffect(() => {
     !access && navigate('/')
     // eslint-disable-next-line
-  }, [access])
+  }, [access]);
 
   return (
     <div className="App">
-      {location.pathname !== '/' && <NavBar buscarPaciente={buscarPaciente} logout={logout} />}
+      {(location.pathname !== '/' && location.pathname !== '/sign-up') &&
+       <NavBar buscarPaciente={buscarPaciente} logout={logout} />}
       <Routes>
         <Route
           path='/'
