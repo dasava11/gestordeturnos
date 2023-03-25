@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    border-radius: 15px;
+    margin-left: 80%;
+    margin-top: 2%;
+    position: absolute;
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.button {
+    width: 9vh;
+    height: 4vh;
+    background-color: #03396c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.button:hover {
+    background-color: white;
+    color: #003D7F;
+}

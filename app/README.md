@@ -1,11 +1,6 @@
 **Para empezar a trabajar, primero en la carpeta raiz, a la altura del archivo package.json abren la consola, la integrada del visual o la que quieran, y ejecutan el comando "npm install" o "npm i"**
 
-**Despues pueden empezar a trabajar en el repo viendolo en tiempo real en un explorador ejecutando el comando "npm start"**
-
-**Para empezar a trabajar, primero en la carpeta raiz, a la altura del archivo package.json abren la consola, la integrada del visual o la que quieran, y ejecutan el comando "npm install" o "npm i"**
-
-**Despues pueden empezar a trabajar en el repo viendolo en tiempo real en un explorador ejecutando el comando "npm start"**
-
+**Después pueden empezar a trabajar en el repo viéndolo en tiempo real en un explorador ejecutando el comando "npm start"**
 
 * Login component -> componente login (HECHO)
         -> un formulario con
@@ -14,7 +9,7 @@
             -> un boton type submit
 
 * Sign In component -> componente crear cuenta
-        -> un formulario con            
+        -> un formulario con
             -> un input para el nombre
             -> un input para la contraseña
             -> un input para repetir la contraseña
@@ -31,7 +26,6 @@
               -> login component
               -> signin component
               -> searchBar component
-
         -> body 
               -> graficar los turnos
                     -> card component 
